@@ -11,3 +11,4 @@ RUN pip3 install openpyxl
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-get update
 RUN apt-get install -y gcc-7 g++
+RUN pip3 install gcovr
