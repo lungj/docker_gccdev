@@ -12,5 +12,5 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-add-repository -yu 'deb http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu xenial main'
 RUN add-apt-repository --remove ppa:ubuntu-toolchain-r/test
 RUN apt-get update
-RUN apt-get install -y gcc-7 g++
+RUN apt-get install -y gcc-7 g++-7
 RUN pip3 install gcovr
