@@ -14,3 +14,5 @@ RUN add-apt-repository --remove ppa:ubuntu-toolchain-r/test
 RUN apt-get update
 RUN apt-get install -y gcc-7 g++-7
 RUN pip3 install gcovr
+# Patch gcovr
+RUN perl  -p -i -e 's|itertools.izip|zip|g' /usr/local/bin/gcovr
